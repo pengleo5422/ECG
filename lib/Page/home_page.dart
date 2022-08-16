@@ -12,7 +12,13 @@ class GroupWidget extends StatefulWidget {
 class _GroupWidgetState extends State<GroupWidget> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Scrollbar(
+        child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        reverse: true,
+        padding: EdgeInsets.all(0.0),
+    physics: BouncingScrollPhysics(),
+    child:Stack(
         alignment:Alignment.topCenter,
       children: <Widget>[
 
@@ -96,6 +102,6 @@ class _GroupWidgetState extends State<GroupWidget> {
           ],
         ),
       ],
-    );
+    )));
   }
 }

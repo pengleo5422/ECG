@@ -34,6 +34,7 @@ class _BottomNavigationControllerState extends State<BottomNavigationController>
         alignment: Alignment.bottomCenter,
         clipBehavior: Clip.none,
         children: [
+
           Scaffold(appBar: AppBar(
             title: Text(''),
           ),
